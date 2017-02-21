@@ -1,0 +1,17 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int main (){
+float cash=0; float day=0;
+printf ("Vvedite summu vklada :");
+scanf ("%f",&cash);
+if (cash<10000){
+	printf ("error ");
+	return 0;
+}
+printf ("Vvedite kol-vo dney:");
+scanf ("%f",&day);
+if (day>365 || day<0){
+	printf ("error ");
+	return 0;
+}
