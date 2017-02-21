@@ -15,6 +15,7 @@ if (day>365 || day<0){
 	printf ("error ");
 	return 0;
 }
+
 if(cash<=100000 && cash>=10000 ) {
     if(day>0 && day<=30) {
       cash=cash-(cash*0.1);
@@ -25,7 +26,8 @@ if(cash<=100000 && cash>=10000 ) {
     }  if(day>=241 && day<=365) {
         cash=cash+(cash*0.12);
     }
-if(cash>100000) {
+} 
+ if(cash>100000) {
     if(day>0 && day<=30) {
       cash=cash-(cash*0.1);
     }  if(day>=31 && day<=120) {
