@@ -5,14 +5,14 @@ int main (){
 int cash=0; int day=0;
 printf ("Vvedite summu vklada :");
 scanf ("%f",&cash);
-if (day>365 || day<0){
-	printf ("error /n");
+if (cash<100000){
+	printf ("error");
 	return 0;
 }
 printf ("Vvedite kol-vo dney:");
 scanf ("%f",day);
-if (cash<100000){
-	printf ("error /n");
+if (day>365 || day<0){
+	printf ("error ");
 	return 0;
 }
 if(cash<=1000000 && cash>=100000) {
