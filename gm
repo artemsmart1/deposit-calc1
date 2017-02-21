@@ -35,6 +35,7 @@ if(cash<=1000000 && cash>=100000) {
     } else if(day>=241 && day<=365) {
       cash=cash+(cash*0.15);
     }
-   
+   printf("cash++:");
+    return 0;
 }
 }
