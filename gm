@@ -1,12 +1,32 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+void money  (int cash);
+void days (int day); 
+
+void money (int cash){
+	if (cash<10000){
+	printf ("error ");
+	}
+	
+}
+void days (int day){
+	if (day>365 || day<0){
+	printf ("error ");
+	
+}
+}
+
+
 int main (){
+
 float cash=0; float day=0;
 printf ("Vvedite summu vklada :");
 scanf ("%f",&cash);
-
+money (cash);
 
 printf ("Vvedite kol-vo dney:");
 scanf ("%f",&day);
+days (day);
 }
+
