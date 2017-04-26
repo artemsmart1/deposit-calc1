@@ -3,9 +3,9 @@
 #include "deposit.h"
 
 int check (int day,int cash){
-	if (cash<10000 || day <0 || day>365){
-	printf ("error ");
-	}
+	if (cash<10000 || day <0 || day>365)return 1;
+        return 0;    
+	
 	
 }
 

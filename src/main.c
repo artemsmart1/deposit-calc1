@@ -10,11 +10,10 @@ printf ("Vvedite summu vklada :");
 scanf ("%d",&cash);
 printf ("Vvedite kol-vo dney:");
 scanf ("%d",&day);
-check (day,cash);
+
+if (check (day, cash))return 0;
+
 task ( day, cash);
-
-
-
 
 
 return 0;
