@@ -1,14 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "deposit.h"
 
-void check (int cash,int day){
+int check (int day,int cash){
 	if (cash<10000 || day <0 || day>365){
 	printf ("error ");
 	}
 	
 }
 
-float task (float day,float cash){
+void  task (int  day,int  cash){
 	if(cash<=100000 && cash>=10000 ) {
     if(day>0 && day<=30) {
       cash=cash-(cash*0.1);
@@ -31,9 +32,7 @@ float task (float day,float cash){
       cash=cash+(cash*0.15);
     }
 }
-printf("Cash: %f \n",cash);
-    system ("pause");
-    return 0;
-	
+printf("Cash: %d \n",cash);
+ 	
 }
 
