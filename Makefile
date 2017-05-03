@@ -1,16 +1,17 @@
 
 
-CC            = gcc
-CFLAGS        = -Wall -Werror
-EXECUTABLE    = bin/program
-SRC_BUILD_DIR = build/src
-SRC_DIR       = src
+CC   = gcc
+CFLAGS   = -Wall -Werror
+EXECUTABLE = make
+SRC_BIN = bin
+SRC_BUILD_DIR = build
+SRC_DIR   = src
 
 
 all: makedir compile
 
 makedir:
-	mkdir -p bin build/src
+	mkdir -p bin build
 
 compile: $(SRC_BUILD_DIR)/main.o $(SRC_BUILD_DIR)/deposit.o
 	$(CC) $(SRC_BUILD_DIR)/main.o $(SRC_BUILD_DIR)/deposit.o -o $(EXECUTABLE)
@@ -27,6 +28,6 @@ $(SRC_BUILD_DIR)/deposit.o: $(SRC_DIR)/deposit.c
 
 
 
-.PHONY : clean
+ .PHONY : clean
 clean:
 	rm -rf build/*.o bin/*
