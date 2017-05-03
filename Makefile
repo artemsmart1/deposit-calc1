@@ -14,7 +14,7 @@ makedir:
 	mkdir -p bin build
 
 compile: $(SRC_BUILD_DIR)/main.o $(SRC_BUILD_DIR)/deposit.o
-	$(CC) $(SRC_BUILD_DIR)/main.o $(SRC_BUILD_DIR)/deposit.o -o $(EXECUTABLE)
+	$(CC) $(SRC_BUILD_DIR)/main.o $(SRC_BUILD_DIR)/deposit.o -o $(SRC_BIN)/$(EXECUTABLE)
 
 $(SRC_BUILD_DIR)/main.o: $(SRC_DIR)/main.c
 	$(CC) $(CFLAGS) -c $(SRC_DIR)/main.c -o $(SRC_BUILD_DIR)/main.o
