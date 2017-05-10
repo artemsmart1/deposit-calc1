@@ -1,5 +1,3 @@
-
-
 CC   = gcc
 CFLAGS   = -Wall -Werror
 EXECUTABLE = make
@@ -21,11 +19,6 @@ $(SRC_BUILD_DIR)/main.o: $(SRC_DIR)/main.c
 
 $(SRC_BUILD_DIR)/deposit.o: $(SRC_DIR)/deposit.c
 	$(CC) $(CFLAGS) -c $(SRC_DIR)/deposit.c -o $(SRC_BUILD_DIR)/deposit.o
-
-
-
-
-
 
 
  .PHONY : clean
