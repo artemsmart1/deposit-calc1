@@ -15,27 +15,25 @@ CTEST(Inputdation, CheckPassRight)
     ASSERT_EQUAL (expected,result);
 } 
 
-CTEST(Inputdation,CheckUnderZero)
+CTEST(InputValidation, durationLessZeroFail)
 {
-    const int result = check (-10,0);
+    const int result = check(-5, 0);
     const int expected = 1;
-    ASSERT_EQUAL (expected, result);
+    ASSERT_EQUAL(expected, result);
 }
 
-CTEST(Inputdation,CheckUnderZero)
+CTEST(InputValidation, amountLessZeroFail)
 {
-    const int result = check (10,-100)
+    const int result = check(5, -100);
     const int expected = 1;
-    ASSERT_EQUAL (expected,result);
+    ASSERT_EQUAL(expected, result);
 }
 
-CTEST(InputValidation,DaysAndCashTestPass)
+CTEST(InputValidation, durationAndAmountRangeTestPass)
 {
-    const int result = check (40,15000)
+    const int result = check(40, 15000);
     const int expected = 0;
-    ASSERT_EQUAL (expected,result);
+    ASSERT_EQUAL(expected, result);
 }
-
-
 
 
