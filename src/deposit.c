@@ -9,7 +9,7 @@ int check (int day,int cash){
 	
 }
 
-void  task (int  day,int  cash){
+int  task (int  day,int  cash){
 	if(cash<=100000 && cash>=10000 ) {
     if(day>0 && day<=30) {
       cash=cash-(cash*0.1);
@@ -32,7 +32,7 @@ void  task (int  day,int  cash){
       cash=cash+(cash*0.15);
     }
 }
-printf("Cash: %d \n",cash);
+return cash;
  	
 }
 

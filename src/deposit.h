@@ -2,5 +2,5 @@
 #define DEPOSIT_H
 
 int check(int ,int);
-void task (int ,int);
+int task (int ,int);
 #endif

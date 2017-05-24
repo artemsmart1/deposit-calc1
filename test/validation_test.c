@@ -1,28 +1,28 @@
 #include "deposit.h"
 #include "ctest.h"
 
-CTEST(InputValidation, CheckPassLeft)
+CTEST(Inputdation, CheckPassLeft)
 {
     const int result = check (0,0);
     const int expected = 1;
     ASSERT_EQUAL(expected,result);
 }
 
-CTEST(InputValidation, CheckPassRight)
+CTEST(Inputdation, CheckPassRight)
 {
     const int result = check (365,0);
     const int expected = 1;
     ASSERT_EQUAL (expected,result);
 } 
 
-CTEST(InputValidation,CheckUnderZero)
+CTEST(Inputdation,CheckUnderZero)
 {
     const int result = check (-10,0);
     const int expected = 1;
     ASSERT_EQUAL (expected, result);
 }
 
-CTEST(InputValidation,CheckUnderZero)
+CTEST(Inputdation,CheckUnderZero)
 {
     const int result = check (10,-100)
     const int expected = 1;
